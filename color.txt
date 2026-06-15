@@ -1,0 +1,6 @@
+link :https://colorhunt.co/palette/222831393e46948979dfd0b8
+
+primary : #222831
+secondary : #393E46
+accent : #948979
+text : #DFD0B8

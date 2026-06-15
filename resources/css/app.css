@@ -1,0 +1,118 @@
+/* @import 'tailwindcss'; */
+@import 'config.css';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.scroll-hidden::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-hidden {
+    scrollbar-width: none;
+}
+
+.scroll-hidden {
+    -ms-overflow-style: none;
+}
+
+.bg-primary {
+    background-color: var(--bs-primary) !important;
+}
+
+.bg-secondary {
+    background-color: var(--bs-secondary) !important;
+}
+
+.bg-accent {
+    background-color: var(--brand-accent);
+}
+
+.bg-foreground {
+    background-color: var(--brand-foreground);
+}
+
+.text-primary {
+    color: var(--bs-primary) !important;
+}
+
+.text-secondary {
+    color: var(--bs-secondary) !important;
+}
+
+.text-accent {
+    color: var(--brand-accent) !important;
+}
+
+.text-foreground {
+    color: var(--brand-foreground) !important;
+}
+
+.hover-primary{
+    transition: .25s;
+}
+
+.hover-primary:hover{
+    background-color: var(--secondary-color) !important;
+}
+
+.hover-scale{
+    transition: .25s;
+}
+
+.hover-scale:hover{
+    transform: scale(1.05);
+}
+
+.hover-shadow{
+    transition: .25s;
+}
+
+.hover-shadow:hover{
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+}
+
+.hover-border{
+    transition: .25s;
+}
+
+.hover-border:hover{
+    border-width: 2px;
+    border-top: 1px;
+    border-left: 1px;
+    border-color: var(--brand-accent);
+}
+
+.spinner {
+    animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.navbar-search-input {
+    width: 150px;
+    transition: width 0.3s ease;
+}
+
+.navbar-search-input:focus {
+    width: 180px;
+}
+
+@media (min-width: 576px) {
+    .navbar-search-input {
+        width: 220px;
+    }
+    .navbar-search-input:focus {
+        width: 300px;
+    }
+}

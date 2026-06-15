@@ -1,0 +1,14 @@
+:root {
+    --bs-primary: #222831;
+    --bs-secondary: #393E46;
+    
+    --brand-accent: #948979;
+    --brand-foreground: #DFD0B8;
+}
+
+.bg-linear-primary {
+    background: linear-gradient(135deg, #948979 0%, #393E46 100%) !important;
+}
+.bg-linear-secondary {
+    background: linear-gradient(135deg, #393E46 0%, #222831 100%) !important;
+}
